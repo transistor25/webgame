@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | prototype2</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 350px; height: 622px; background: #231F20"></canvas>
+    <script src="Build/ti.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/ti.data",
+        frameworkUrl: "Build/ti.framework.js",
+        codeUrl: "Build/ti.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "prototype2",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
